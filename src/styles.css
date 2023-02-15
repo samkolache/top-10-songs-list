@@ -1,0 +1,119 @@
+@font-face {
+    font-family: spotBold;
+    src: url(fonts/Gotham-Bold.otf);
+}
+
+@font-face {
+    font-family: spotLight;
+    src: url(fonts/Gotham-Light.otf);
+}
+
+
+* {
+    margin: 0;
+}
+
+main {
+    display: grid;
+    grid-template-rows: .25fr 2.5fr .25fr;
+}
+
+.header {
+    background-color:#de0f9b;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.heading > img {
+    width: 30px;
+    height: 30px;
+    padding-top: 30px;
+}
+
+.heading > p {
+    font-size: 3rem;
+    line-height: normal;
+    font-family: spotBold;
+}
+
+
+.main {
+    height: 629px;
+    display: grid;
+    grid-template-columns: .50fr 1.50fr;
+}
+
+.options {
+    background-color: #25947f;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    gap: 20px;
+}
+
+.select-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-family: spotLight;
+    font-size: 1.2rem;
+}
+
+.select-btn:hover {
+    background-color: rgba(50.2, 50.2, 50.2, 0.25)
+}
+
+.list {
+    background-color: #c1e86b;
+    display: grid;
+    grid-template-rows: .50fr 1.50fr;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.intro > p {
+    font-size: 2rem;
+    font-family: spotBold;
+}
+
+.intro > button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    margin-top: 20px;
+    font-family: spotLight;
+    font-size: 1.2rem;
+}
+
+.intro > button:hover {
+    background-color: rgba(50.2, 50.2, 50.2, 0.25);
+    border-radius: 8px;
+}
+
+
+.footer {
+    background-color: black;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer > p {
+    color: white;
+    font-family: spotLight;
+}
